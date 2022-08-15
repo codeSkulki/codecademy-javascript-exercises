@@ -21,7 +21,17 @@
 
 // Chain two iteration methods on the same array.
 
+        //mixed array of numbers and string
+        const someArr = [1, 2, 3, 'Apple', 9];
 
+
+        //chaining of two iteration methods
+        const onlyNumSum = someArr.filter(item => typeof item === 'number')
+        .reduce((accumulator, currentValue) => accumulator + currentValue)
+
+
+        //spits out total sum of numbers in someArr
+        console.log(onlyNumSum);
 
 // Use the optional arguments in an iterator to include the index or the entire array. (Check out MDN’s Array iteration methods page for more information)
 
