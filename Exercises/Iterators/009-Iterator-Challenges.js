@@ -35,6 +35,15 @@
 
 // Use the optional arguments in an iterator to include the index or the entire array. (Check out MDN’s Array iteration methods page for more information)
 
+        //some array
+        const newArr = [1, 2, 3, 4, 58, 49, 56, 69];
+        
+        //utilized optional arguments
+        let newerArr = newArr.filter((item, index) => {
+        return item > 7 && index > 4;
 
+        });
+        
+        console.log(newerArr);
 
 // Use .reduce() to take a multi-layered array and return a single layer array from scratch.
