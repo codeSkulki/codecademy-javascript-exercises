@@ -47,3 +47,18 @@
         console.log(newerArr);
 
 // Use .reduce() to take a multi-layered array and return a single layer array from scratch.
+
+        const multiDimensArr = [
+            [2556, 2300],
+            [21256, 400],
+            [3430, 5600],
+            [4566, 1640000],
+        ];
+        
+        //reduces multidimensional array to single layer array
+        const reducedArray = multiDimensArr.reduce((prev, curr) => {
+            console.log(prev, curr);
+            return prev.concat(curr);
+        })
+        
+        console.log(reducedArray);
